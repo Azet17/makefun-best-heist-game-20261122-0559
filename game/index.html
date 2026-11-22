@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vesper — The Meridian Job</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #070a12;
+    color: #e8ecf4;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #wrap {
+    width: min(1280px, 100vw);
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #101826;
+    cursor: crosshair;
+  }
+  #foot {
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #9aa5b8;
+    text-align: center;
+  }
+  #foot b { color: #ffd65a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="foot"><b>VESPER — The Meridian Job.</b> Cross the room, read the cones, lift the piece, reach the getaway door. WASD move · E grab · 1/2/3 tools · click throws a noise-maker · M mute · Esc pause.</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
